@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>AniStream | Nonton Anime Sub Indo</title>
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS external -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-play-circle"></i> AniStream</div>
+        <div class="nav-links">
+            <a href="#" class="active">Beranda</a>
+            <a href="#">Daftar Anime</a>
+            <a href="#">Jadwal Rilis</a>
+            <a href="#">Favorite</a>
+            <button class="btn-custom" id="btnLoginSimulasi"><i class="fas fa-user-astronaut"></i> Masuk</button>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero-text">
+            <div class="hero-badge"><i class="fas fa-language"></i> Sub Indo • Update Setiap Hari</div>
+            <h1>Streaming Anime <br>Tanpa Iklan Mengganggu</h1>
+            <p>Nonton anime terbaru, dari shonen, isekai, sampai slice of life. Kualitas HD & server cepat.</p>
+            <button class="btn-primary" id="exploreAnimeBtn"><i class="fas fa-play"></i> Mulai Nonton</button>
+            <div class="hero-stats">
+                <div class="stat-item"><h3>1000+</h3><p>Episode</p></div>
+                <div class="stat-item"><h3>240+</h3><p>Judul Anime</p></div>
+                <div class="stat-item"><h3>4.9</h3><p>Rating User</p></div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://source.unsplash.com/featured/500x400?anime,otaku" alt="anime hero banner">
+        </div>
+    </div>
+
+    <!-- filter & search -->
+    <div class="filter-bar">
+        <div class="genre-group" id="genreGroup">
+            <button class="genre-btn active" data-genre="all">Semua Genre</button>
+            <button class="genre-btn" data-genre="action">Action</button>
+            <button class="genre-btn" data-genre="adventure">Petualangan</button>
+            <button class="genre-btn" data-genre="isekai">Isekai</button>
+            <button class="genre-btn" data-genre="romance">Romance</button>
+            <button class="genre-btn" data-genre="comedy">Comedy</button>
+            <button class="genre-btn" data-genre="fantasy">Fantasy</button>
+        </div>
+        <div class="search-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchAnimeInput" placeholder="Cari anime, misal: Jujutsu, One Piece...">
+        </div>
+    </div>
+
+    <!-- daftar anime grid -->
+    <div id="animeContainer" class="anime-grid"></div>
+</div>
+
+<footer>
+    <p>AniStream — Nonton Anime Sub Indo Terbaik. Semua konten hanya untuk simulasi. <br> Gambar poster menggunakan sumber representasi legal (Unsplash & asset bebas).</p>
+</footer>
+
+<!-- modal streaming -->
+<div id="streamModal" class="modal-stream">
+    <div class="modal-content-stream">
+        <div class="modal-header">
+            <h3 id="modalAnimeTitle">Judul Anime</h3>
+            <span class="close-modal" id="closeModalBtn">&times;</span>
+        </div>
+        <div class="video-placeholder" id="videoPlaceholder">
+            <i class="fas fa-tv"></i>
+            <p style="font-weight: 500;">▶️ SIMULASI PEMUTAR VIDEO ◀️</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">Server streaming akan segera hadir. Episode 1 - Subtitle Indonesia</p>
+        </div>
+        <div class="modal-footer">
+            <i class="fas fa-download"></i> Kualitas: 1080p • <i class="fas fa-closed-captioning"></i> Sub Indo • <i class="fas fa-server"></i> Server 01
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
